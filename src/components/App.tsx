@@ -1,17 +1,13 @@
 // import { useState } from 'react'
 import styled from "styled-components";
 
-
-const TestDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    background-color: #b12424;
+const Text = styled.p`
+  font-weight: 400;
+  font-size: 18px;
 `
 
 export default function App() {
   return (
-    <TestDiv>
-      <h1>why is it overlapping2</h1>
-    </TestDiv>
+    <Text>Deciding on typography</Text>
   )
 }

@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
 
 body {
-    font-family: 'Merriweather, serif';
+    font-family: 'XCharter', serif;
     color: #333333;
     background-color: #f6f6f2;
 }
+
+@font-face {
+    font-family: 'XCharter';
+    font-style: normal;
+    src: url('fonts/XCharter.woff2') format('woff2');
+     font-display: swap;
+     font-weight: 400;  
+  }
+
+@font-face {
+    font-family: 'XCharter';
+    font-style: normal;
+    src: url('fonts/XCharter-Bold.woff2') format('woff2');
+     font-display: swap;
+     font-weight: 600;  
+  }
 /* :root {
     font-family: 'Merriweather', serif;
     line-height: 1.5;

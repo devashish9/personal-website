@@ -1,23 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
-    font-family: 'XCharter', serif;
+    font-family: 'Charter', serif;
     color: #000;
-    background-color: #f6f6f2;
+    background-color: #e9e9e5;
+    /* background: linear-gradient(to bottom, rgba(150, 150, 100, 0.1) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 200, 0.1) 100%); */
+    font-size: 10px;
 }
 
 @font-face {
-    font-family: 'XCharter';
+    font-family: 'Charter';
     font-style: normal;
-    src: url('fonts/XCharter.woff2') format('woff2');
+    src: url('fonts/charter_regular.woff2') format('woff2');
      font-display: swap;
      font-weight: 400;  
   }
 
 @font-face {
-    font-family: 'XCharter';
+    font-family: 'Charter';
     font-style: normal;
-    src: url('fonts/XCharter-Bold.woff2') format('woff2');
+    src: url('fonts/charter_bold.woff2') format('woff2');
      font-display: swap;
      font-weight: 600;  
   }

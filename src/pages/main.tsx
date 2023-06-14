@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './components/App.tsx'
-import './styles/globals.css'
-import Header from './components/Header.tsx'
+import App from '../components/App.tsx'
+import '../styles/globals.css'
+import Header from '../components/Header.tsx'
 import styled from 'styled-components'
 
 

@@ -1,21 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import App from '../components/App.js'
 import '../styles/globals.css'
-import Header from '../components/Header.js'
-import styled from 'styled-components'
 
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-`
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <Container>
-      <Header />
-      <App />
-    </Container>
+    <RouterProvider router = {router} />
   </React.StrictMode>,
 )

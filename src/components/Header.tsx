@@ -1,23 +1,44 @@
 import styled from "styled-components";
+import {Link} from "react-router-dom";
 
 
 const HeaderDiv = styled.div`
     display: flex;
     flex-direction: row;
-    line-height: 1.2em;
-    font-size: 4em;
-    font-weight: 600;
-    font-variant: small-caps;
+    font-size: 3em;
+    font-weight: 400;
     text-align: center;
 `
 
+const NameLink = styled(Link)`
+cursor: pointer;
+position: relative;
+&:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e9e9e5;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+&:hover {
+  &:after {
+    visibility: visible;
+    width: 100%;
+  }
+}
+`
+//     &:hover {
+//     text-shadow: 2px 3px 5px rgba(233,233,229,0.75);
+//     }
+// `
 export default function Header() {
     return (
         <HeaderDiv>
-            <h1 className="w-1/4 bg-red-500">DEVASHISH SOOD</h1>
-            <div className="w-3/4 text-right bg-blue-500">
-                buttonsbruh
-            </div>
+            <NameLink to="/test">Devashish Sood</NameLink>
         </HeaderDiv>
     )
 }

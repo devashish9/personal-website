@@ -4,8 +4,8 @@
 
 body {
     font-family: 'Charter', serif;
-    color: #e9e9e5;
-    background-color: #000;
+    color: #121212;
+    background-color: #e9e9e5;
     /* background: linear-gradient(to bottom, rgba(150, 150, 100, 0.1) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 200, 0.1) 100%); */
     font-size: 10px;
 }

@@ -4,41 +4,69 @@ import {Link} from "react-router-dom";
 
 const HeaderDiv = styled.div`
     display: flex;
+    margin: 10px;
     flex-direction: row;
-    font-size: 3em;
-    font-weight: 400;
+    font-weight: 200;
     text-align: center;
+    justify-content: space-between;
 `
 
-const NameLink = styled(Link)`
+const SpaceDiv = styled.div`
+  flex-grow: 1;
+
+`
+// font-variant: small-caps
+const BaseStyledLink = styled(Link)`
 cursor: pointer;
 position: relative;
-&:after {
+overflow: hidden;
+&::before,
+&::after {
   content: "";
   position: absolute;
-  width: 0;
-  height: 2px;
   bottom: 0;
-  left: 0;
-  background-color: #e9e9e5;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  width: 50%;
+  height: 2px;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s;
 }
-&:hover {
-  &:after {
-    visibility: visible;
-    width: 100%;
-  }
+&::after {
+  transform-origin: left;
+  right: 0;
+}
+&:hover::before,
+&:hover::after {
+  transform: scaleX(1);
 }
 `
-//     &:hover {
-//     text-shadow: 2px 3px 5px rgba(233,233,229,0.75);
-//     }
-// `
+
+const NameLink = styled(BaseStyledLink)`
+font-size: 5em;
+line-height: 1.2;
+`
+
+const ChildDiv2 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  background: red;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+`;
+
 export default function Header() {
     return (
         <HeaderDiv>
-            <NameLink to="/test">Devashish Sood</NameLink>
+            <SpaceDiv />
+            <NameLink to="/">Devashish Sood</NameLink>
+            <ChildDiv2>
+                <BaseStyledLink to = "/test">test</BaseStyledLink>
+                <BaseStyledLink to = "/placeholder">test2</BaseStyledLink>
+                <BaseStyledLink to = "/placeholder">test3</BaseStyledLink>
+            </ChildDiv2>
         </HeaderDiv>
     )
 }

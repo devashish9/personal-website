@@ -23,8 +23,8 @@ export default function Header() {
       <HeaderButtonDiv>
         <PageLink to="/placeholder">Experience</PageLink>
         <PageLink to="/test">Projects</PageLink>
-        <PageLink to="/placeholder">Journal</PageLink>
-        <PageLink to="/placeholder">About</PageLink>
+        <PageLink to="/placeholder">Notes</PageLink>
+        <PageLink to="/placeholder">Misc</PageLink>
       </HeaderButtonDiv>
     </HeaderDiv>
   );

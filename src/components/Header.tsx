@@ -13,7 +13,6 @@ const HeaderDiv = styled.div`
 
 const SpaceDiv = styled.div`
   flex-grow: 1;
-
 `
 // font-variant: small-caps
 const BaseStyledLink = styled(Link)`

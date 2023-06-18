@@ -7,13 +7,12 @@ import {
 import { styled } from "styled-components";
 
 const HomeLink = styled(BaseStyledLink)`
-  font-size: 3em;
-  height: 50%;
+  font-size: 4em;
   font-weight: 600;
 `;
 
 const PageLink = styled(BaseStyledLink)`
-  margin: 1px;
+  margin: 0 0 10px 10px;
 `;
 
 export default function Header() {

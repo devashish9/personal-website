@@ -9,7 +9,7 @@ const Text = styled.p`
 `;
 
 const Heading = styled.h1`
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 400;
 `;
 export default function HomePageBody() {

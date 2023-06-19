@@ -10,13 +10,13 @@ const Pill = styled.div`
   text-align: center;
 `;
 
-interface ProjectProps {
-  projName: string;
-  title: string;
-  description: string;
-  img: string;
-  githubLink?: string;
-}
+// interface ProjectProps {
+//   projName: string;
+//   title: string;
+//   description: string;
+//   img: string;
+//   githubLink?: string;
+// }
 
 export default function Project() {
   return <Pill>??</Pill>;

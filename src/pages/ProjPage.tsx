@@ -1,6 +1,6 @@
 import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
-import { Body, Container, Text } from "../styles/general-styles.js";
+import { Body, Container } from "../styles/general-styles.js";
 import styled from "styled-components";
 
 const Pill = styled.div`

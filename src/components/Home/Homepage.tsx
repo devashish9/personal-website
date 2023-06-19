@@ -1,14 +1,14 @@
 import styled from "styled-components";
-import Header from "../components/Header.js";
-import Footer from "./Footer.js";
-import HomePageBody from "./Home/Body.js";
+import Header from "../Header.js";
+import Footer from "../Footer.js";
+import HomePageBody from "./Body.js";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 93vh;
 `;
-export default function App() {
+export default function Homepage() {
   return (
     <Container>
       <Header />

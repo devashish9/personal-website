@@ -8,11 +8,13 @@ import { styled } from "styled-components";
 
 const HomeLink = styled(BaseStyledLink)`
   font-size: 4em;
-  font-weight: 600;
+  line-height: 1;
+  margin-top: auto;
+  margin-bottom: auto;
 `;
 
 const PageLink = styled(BaseStyledLink)`
-  margin: 0 0 10px 10px;
+  margin: 0 0.625rem 0 0;
 `;
 
 export default function Header() {
@@ -21,10 +23,10 @@ export default function Header() {
       <HomeLink to="/">Devashish</HomeLink>
       <SpaceDiv />
       <HeaderButtonDiv>
-        <PageLink to="/placeholder">Experience</PageLink>
-        <PageLink to="/test">Projects</PageLink>
-        <PageLink to="/placeholder">Notes</PageLink>
-        <PageLink to="/placeholder">Misc</PageLink>
+        <PageLink to="/exp">Experience</PageLink>
+        <PageLink to="/projects">Projects</PageLink>
+        <PageLink to="/notes">Notes</PageLink>
+        <PageLink to="/misc">Misc</PageLink>
       </HeaderButtonDiv>
     </HeaderDiv>
   );

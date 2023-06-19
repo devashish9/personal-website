@@ -5,7 +5,6 @@ const HeaderDiv = styled.div`
   display: flex;
   flex-direction: row;
   font-weight: 200;
-  justify-content: space-between;
 `;
 
 const SpaceDiv = styled.div`
@@ -43,7 +42,7 @@ const BaseStyledLink = styled(Link)`
 const HeaderButtonDiv = styled.div`
   display: flex;
   justify-content: flex-end; /* Align items to the right */
-  align-items: flex-start; /* Align wrapped lines to the top */
+  align-items: flex-end; /* Align wrapped lines to the top */
   font-size: 2.5em;
   width: 35vw;
   flex-wrap: wrap; /* Allow items to wrap onto multiple lines */

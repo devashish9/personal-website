@@ -10,15 +10,16 @@
     margin-right: 9vw;
     font-family: "Charter", serif;
     color: #121212;
-    background-color: #e9e9e5;
+    /* background-color: rgba(150, 150, 100, 0.1); */
+    background-color: var(--main-white);
     font-size: 0.5em;
   }
 
-  /* @media (max-width: 700px) {
+  @media (max-width: 600px) {
     body {
-    font-size: 0.25em;
+      font-size: 0.35em;
     }
-  } */
+  }
 }
 
 @font-face {
@@ -41,4 +42,5 @@
   --main-width: 90%;
   max-width: 1200px;
   margin: auto;
+  --main-white: rgb(246, 246, 241);
 }

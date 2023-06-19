@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Homepage from "../components/Home/Homepage.tsx";
-import ExpPage from "../components/Experience/ExpPage.js";
-import ProjPage from "../components/Projects/ProjPage.tsx";
-import NotesPage from "../components/Notes/NotesPage.tsx";
-import MiscPage from "../components/Misc/MiscPage.tsx";
+import Homepage from "./Homepage.tsx";
+import ExpPage from "./ExpPage.js";
+import ProjPage from "./ProjPage.tsx";
+import NotesPage from "./NotesPage.tsx";
+import MiscPage from "./MiscPage.tsx";
 import "../styles/globals.css";
 
 const router = createBrowserRouter([

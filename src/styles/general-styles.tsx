@@ -2,7 +2,8 @@ import { styled } from "styled-components";
 
 const Body = styled.div`
   flex: 1;
-  padding: 3vw 0;
+  padding: 5rem 0;
+  font-size: 1.5em;
 `;
 
 const Container = styled.div`

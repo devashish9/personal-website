@@ -1,23 +1,23 @@
-import { styled } from "styled-components";
+import { SectionHeading, Pill } from "../styles/section-styles";
 
-const Pill = styled.div`
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: #ffffff;
-  background-color: #007bff;
-  border-radius: 50px; // This gives the pill shape
-  text-align: center;
-`;
+interface ProjectProps {
+  projName: string;
+  title: string;
+  description: string;
+  techStack: string[];
+  img: string;
+  githubLink?: string;
+}
 
-// interface ProjectProps {
-//   projName: string;
-//   title: string;
-//   description: string;
-//   img: string;
-//   githubLink?: string;
-// }
+const renderTechStack = (techStackArray: string[]) => {
+  return techStackArray.map((el, index) => <Pill key={index}>{el}</Pill>);
+};
 
-export default function Project() {
-  return <Pill>??</Pill>;
+export default function Project(projectProps: ProjectProps) {
+  return (
+    <div>
+      <SectionHeading>Test</SectionHeading>
+      {renderTechStack(projectProps.techStack)}
+    </div>
+  );
 }

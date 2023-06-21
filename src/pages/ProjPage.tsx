@@ -8,10 +8,10 @@ export default function ProjPage() {
     <Body>
       <Project
         projName={"CarpoolNU"}
-        title={"Carpooling app for Northeastern Co-ops and Interns"}
-        description={
-          "Built this at sandbox, for now just typing BS to see how wrapping works, i'm assuming I'll have to set a set width"
-        }
+        description={[
+          "Led a 6-student team to design and launch a carpooling web app for Northeastern co-ops and interns.",
+          "We utilize student-provided information such as home and work location, daily work schedules, and more to generate carpooling recommendations. Users can then connect each other and figure out more carpooling details by themselves.",
+        ]}
         techStack={[
           "Next",
           "React",
@@ -26,12 +26,9 @@ export default function ProjPage() {
       />
       <Project
         projName={"Edulaw"}
-        title={
-          "Assisting parents in Massachusetts to learn about and fight educational violations"
-        }
-        description={
-          "Also built this at Sandbox, need to do something about this wrapping soon lol. Actually I wanna see somethinug here. I think this should fix this. Nvm"
-        }
+        description={[
+          "Also built this at Sandbox, need to do something about this wrapping soon lol. Actually I wanna see somethinug here. I think this should fix this. Nvm",
+        ]}
         techStack={["Next", "React", "Typescript", "React Forms", "MongoDB"]}
         img={EdulawImg}
         githubLink={"https://github.com/sandboxnu/edulaw"}

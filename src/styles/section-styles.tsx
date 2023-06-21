@@ -10,7 +10,7 @@ const Pill = styled.div`
   background-color: #647d96;
   border-radius: 50px; // This gives the pill shape
   text-align: center;
-  margin: 0 0.375rem 0 0;
+  margin: 0 0.3rem 0.25rem 0;
   font-size: 1.25em;
 `;
 
@@ -39,8 +39,7 @@ const SectionContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
 `;
 
 export { Pill, SectionHeading, SectionTitle, SectionImage, SectionContainer };

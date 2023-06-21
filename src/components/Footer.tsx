@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer>
       <StyledHr />
-      <p>LinkedIn, GitHub, Email Icons, maybe resume</p>
+      <p className="text-right">LinkedIn, GitHub, Email Icons, maybe resume</p>
     </footer>
   );
 }

@@ -1,35 +1,36 @@
 import {
   SectionHeading,
-  SectionTitle,
   Pill,
   SectionImage,
   SectionContainer,
 } from "../styles/section-styles";
-import { Text } from "../styles/general-styles";
+import { RegularText } from "../styles/general-styles";
+import { IStyledComponent } from "styled-components";
 
 interface ProjectProps {
   projName: string;
-  title: string;
-  description: string;
+  description: string[];
   img: string;
   githubLink: string;
   techStack: string[];
 }
 
-const renderTechStack = (techStack: string[]) => {
-  return techStack.map((el, index) => <Pill key={index}>{el}</Pill>);
+const abstractComponentMapper = (
+  Comp: IStyledComponent<"web", "div", {}, never>,
+  contentList: string[]
+) => {
+  return contentList.map((el, index) => <Comp key={index}>{el}</Comp>);
 };
 
 export default function Project(projectProps: ProjectProps) {
   return (
     <SectionContainer>
-      <div className="flex-grow">
+      <div className="flex-grow pr-10">
         <SectionHeading>{projectProps.projName}</SectionHeading>
-        {renderTechStack(projectProps.techStack)}
-        <SectionTitle>{projectProps.title}</SectionTitle>
-        <Text>{projectProps.description}</Text>
+        {abstractComponentMapper(Pill, projectProps.techStack)}
+        {abstractComponentMapper(RegularText, projectProps.description)}
       </div>
-      <div className="flex-shrink-0 pr-10 flex items-center justify-center">
+      <div className="flex-shrink-0 pr-5 pt-5 flex items-center justify-center">
         {projectProps.githubLink ? (
           <a href={projectProps.githubLink}>
             <SectionImage src={projectProps.img} />

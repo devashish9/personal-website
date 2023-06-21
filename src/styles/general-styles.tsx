@@ -13,7 +13,8 @@ const Container = styled.div`
 `;
 
 const Text = styled.p`
-  font-size: 1.25em;
+  font-size: 1.2em;
+  line-height: 1.2;
 `;
 
 export { Body, Container, Text };

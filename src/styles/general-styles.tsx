@@ -15,8 +15,8 @@ const Container = styled.div`
 const RegularText = styled.p`
   font-size: 1.2em;
   line-height: 1.2;
-  margin-top: 1px;
-  margin-bottom: 2px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 `;
 
 export { Body, Container, RegularText };

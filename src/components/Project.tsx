@@ -25,19 +25,23 @@ const abstractComponentMapper = (
 export default function Project(projectProps: ProjectProps) {
   return (
     <SectionContainer>
-      <div className="flex-grow pr-10">
+      <div>
         <SectionHeading>{projectProps.projName}</SectionHeading>
         {abstractComponentMapper(Pill, projectProps.techStack)}
-        {abstractComponentMapper(RegularText, projectProps.description)}
       </div>
-      <div className="flex-shrink-0 pr-5 pt-5 flex items-center justify-center">
-        {projectProps.githubLink ? (
-          <a href={projectProps.githubLink}>
+      <div className="flex flex-row">
+        <div className="flex-grow pr-10">
+          {abstractComponentMapper(RegularText, projectProps.description)}
+        </div>
+        <div className="flex-shrink-0 pr-5 flex items-center justify-center">
+          {projectProps.githubLink ? (
+            <a href={projectProps.githubLink}>
+              <SectionImage src={projectProps.img} />
+            </a>
+          ) : (
             <SectionImage src={projectProps.img} />
-          </a>
-        ) : (
-          <SectionImage src={projectProps.img} />
-        )}
+          )}
+        </div>
       </div>
     </SectionContainer>
   );

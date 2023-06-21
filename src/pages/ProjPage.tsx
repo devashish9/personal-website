@@ -9,17 +9,18 @@ export default function ProjPage() {
       <Project
         projName={"CarpoolNU"}
         description={[
-          "Led a 6-student team to design and launch a carpooling web app for Northeastern co-ops and interns.",
-          "We utilize student-provided information such as home and work location, daily work schedules, and more to generate carpooling recommendations. Users can then connect each other and figure out more carpooling details by themselves.",
+          "Northeastern University is known for its co-op program, where students get to work as interns for 4-6 months during academic semesters. Many of these positions are at companies far from campus, requiring a long commute.",
+          "I led a 6-student team to build a carpooling web app for the university. We utilize student-provided information like home/work location and daily work schedules to generate carpool recommendations. Users can then connect with their recommendations and figure out carpooling details.",
         ]}
         techStack={[
-          "Next",
           "React",
           "Typescript",
-          "tRPC",
-          "Mapbox",
+          "Next.js",
           "Prisma",
           "MySQL",
+          "tRPC",
+          "Mapbox",
+          "CSS",
         ]}
         img={CarpoolImg}
         githubLink={"https://github.com/sandboxnu/nucarpool"}
@@ -27,9 +28,17 @@ export default function ProjPage() {
       <Project
         projName={"Edulaw"}
         description={[
-          "Also built this at Sandbox, need to do something about this wrapping soon lol. Actually I wanna see somethinug here. I think this should fix this. Nvm",
+          "Edlaw is an educational web app for parents in Massachusetts to easily file complaints with the state's Department of Education.",
+          "As part of a 5-student team, I helped create a mult-section form that lets parents quickly identity educational violation that may have occured at their child's school, and create a PDF document that can be submitted to the DOE.",
         ]}
-        techStack={["Next", "React", "Typescript", "React Forms", "MongoDB"]}
+        techStack={["React", "Typescript", "Next.js", "MongoDB", "CSS"]}
+        img={EdulawImg}
+        githubLink={"https://github.com/sandboxnu/edulaw"}
+      />
+      <Project
+        projName={"Personal Website"}
+        description={["Pretty much covers it"]}
+        techStack={["React", "Typescript", "Vite", "CSS"]}
         img={EdulawImg}
         githubLink={"https://github.com/sandboxnu/edulaw"}
       />

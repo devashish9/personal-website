@@ -18,4 +18,8 @@ const SectionHeading = styled.h1`
   font-size: 2em;
 `;
 
-export { Pill, SectionHeading };
+const SectionTitle = styled.p`
+  font-size: 1.5em;
+`;
+
+export { Pill, SectionHeading, SectionTitle };

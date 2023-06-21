@@ -8,9 +8,9 @@ export default function ProjPage() {
         projName={"TEStTEst"}
         title={"TEstTEst"}
         description={"yada yada"}
-        techStack={["React", "Typescript"]}
+        techStack={["React", "Typescript", "aeou "]}
         img={"idk"}
-      ></Project>
+      />
     </Body>
   );
 }

@@ -13,7 +13,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.p`
-  font-size: 2em;
+  font-size: 1.25em;
 `;
 
 export { Body, Container, Text };

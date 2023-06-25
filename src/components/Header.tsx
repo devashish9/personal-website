@@ -26,7 +26,6 @@ export default function Header() {
         <PageLink to="/exp">Experience</PageLink>
         <PageLink to="/projects">Projects</PageLink>
         <PageLink to="/notes">Notes</PageLink>
-        <PageLink to="/misc">Misc</PageLink>
       </HeaderButtonDiv>
     </HeaderDiv>
   );
